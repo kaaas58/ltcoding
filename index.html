@@ -48,10 +48,17 @@
     />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="css/style.css" rel="stylesheet" />
+
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+  >
+
   </head>
   <body data-bs-spy="scroll" data-bs-target=".navbar">
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg sticky-top">
+    <nav class="navbar navbar-expand-xxl sticky-top">
       <div class="container">
         <a class="navbar-brand" href="#"
           ><img src="images/3 nearlyBlack.png" alt="" width="350px" /> </a
@@ -228,8 +235,22 @@
           </div>
         </div>
         <div class="row g-4 text-center">
+
+
+           <div
+            class="col-lg-3 col-sm-6"
+            data-aos="fade-down"
+            data-aos-delay="50"
+          >
+            <div class="service theme-shadow p-lg-5 p-5">
+              <div class="iconbox"><i class="ri-voice-recognition-line"></i></div>
+              <h5 class="mt-4 mb-3">C++</h5>
+              <p>low-level & embedded sw development</p>
+            </div>
+          </div>
+
           <div
-            class="col-lg-4 col-sm-6"
+            class="col-lg-3 col-sm-6"
             data-aos="fade-down"
             data-aos-delay="50"
           >
@@ -240,28 +261,33 @@
               <p></p>
             </div>
           </div>
+
           <div
-            class="col-lg-4 col-sm-6"
+            class="col-lg-3 col-sm-6"
             data-aos="fade-down"
             data-aos-delay="50"
           >
             <div class="service theme-shadow p-lg-5 p-5">
               <div class="iconbox"><i class="ri-stack-fill"></i></div>
               <h5 class="mt-4 mb-3">App</h5>
-              <p>progressiv web app / native app / cross platform app</p>
+              <p>progressiv web / native / cross platform </p>
             </div>
           </div>
+
           <div
-            class="col-lg-4 col-sm-6"
+            class="col-lg-3 col-sm-6"
             data-aos="fade-down"
             data-aos-delay="50"
           >
             <div class="service theme-shadow p-lg-5 p-5">
               <div class="iconbox"><i class="ri-android-line"></i></div>
               <h5 class="mt-4 mb-3">Android</h5>
-              <p>(comming up) App developement</p>
+              <p>system / os prgramming (comming up)</p>
             </div>
           </div>
+
+          
+
         </div>
       </div>
     </section>
@@ -272,8 +298,11 @@
           <div data-aos="fade-down" data-aos-delay="250">
             <h6 class="text-white display-6">learning at the moment</h6>
             <h5 class="text-white display-4">
-              <i class="ri-java-fill"></i> <i class="ri-javascript-line"></i>
-              <i class="ri-html5-line"></i> <i class="ri-css3-line"></i>
+              <i class="devicon-cplusplus-plain" style="color: white; font-size: 2.25rem; padding-right: 0.6rem;"></i>
+              <i class="ri-html5-line"></i> 
+              <i class="ri-css3-line"></i>
+              <i class="ri-javascript-line"></i>
+              <i class="ri-java-fill"></i> 
               <i class="ri-github-fill"></i>
             </h5>
           </div>
@@ -374,11 +403,10 @@
 
 
           <section class="section-padding" id="sats">
-           <div class="section title">
-              <!-- <h1 class="display-4 fw-semibold">get ready, create your own future</h1> -->
+           <div class="section title" style="text-align: center;">
+              <h1 class="display-4 fw-semibold">create your own future</h1>
               <div class="lineBlck" style="text-align: center;"></div>
-
-              <!-- <p>a few good words from which I was able to learn something</p> -->
+              <p>do your own research</p>
             </div>
 
 
@@ -387,7 +415,7 @@
 
 
 
-          <div style="text-align: center;">
+          <div style="text-align: center; margin-top: 3rem ;">
 
             <a href="https://www.bitpanda.com/?ref=575877680036968563"
             class="justify-content-center"
@@ -520,5 +548,23 @@
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="js/main.js"></script>
+    <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+    const navbarCollapse = document.querySelector(".navbar-collapse");
+
+    navLinks.forEach((link) => {
+      link.addEventListener("click", () => {
+        if (navbarCollapse.classList.contains("show")) {
+          const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+            toggle: false,
+          });
+          bsCollapse.hide();
+        }
+      });
+    });
+  });
+</script>
+
   </body>
 </html>
