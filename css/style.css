@@ -1,4 +1,4 @@
-@media (max-width: 768px) {
+@media (max-width: 459px) {
   .navbar-nav {
     flex-direction: column;
   }
@@ -15,11 +15,27 @@
     font-size: 1.5rem;
   }
   .section-padding {
-    padding: 20px 0;
+    padding: 60px 0;
   }
+  html {
+  scroll-padding-top: 0px; /* oder Höhe deiner Navbar */
+  }
+
 }
+
+  @media (max-width: 1400px) {
+    html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  scroll-padding-top: 330px; /* oder Höhe deiner Navbar */
+}
+  
+  }
+
 html {
   font-size: 16px;
+  scroll-behavior: smooth;
+  /* scroll-padding-top: 0px; oder Höhe deiner Navbar */
 }
 :root {
   --c-dark: #5a5a5a;
