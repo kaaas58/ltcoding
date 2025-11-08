@@ -1,474 +1,556 @@
-@media (max-width: 459px) {
-  .navbar-nav {
-    flex-direction: column;
-  }
-  .navbar-nav .nav-item {
-    margin-bottom: 10px;
-  }
-  .navbar-toggler {
-    margin-top: 10px;
-  }
-  .display-1 {
-    font-size: 2rem;
-  }
-  .display-3 {
-    font-size: 1.5rem;
-  }
-  .section-padding {
-    padding: 60px 0;
-  }
-  html {
-  scroll-padding-top: 0px; /* oder Höhe deiner Navbar */
-  }
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>LT_SoftwareDev</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="./images/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./images/favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./images/favicons/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="./images/favicons/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <link rel="shortcut icon" href="./images/favicons/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta
+      name="msapplication-config"
+      content="./images/favicons/browserconfig.xml"
+    />
+    <meta name="theme-color" content="#393939" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="css/style.css" rel="stylesheet" />
 
-}
 
-  @media (max-width: 1400px) {
-    html {
-  font-size: 16px;
-  scroll-behavior: smooth;
-  scroll-padding-top: 330px; /* oder Höhe deiner Navbar */
-}
-  
-  }
 
-html {
-  font-size: 16px;
-  scroll-behavior: smooth;
-  /* scroll-padding-top: 0px; oder Höhe deiner Navbar */
-}
-:root {
-  --c-dark: #5a5a5a;
-  --c-dark-sat: #414141;
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+  >
 
-  --c-dark-hover: #767676;
-  --c-light: #562cff;
-  --c-brand: #4450f4;
-  --c-brand-light: #5a65ffd7;
-  --c-brand-rgb: 78, 87, 212;
-  --c-btn-light: rgba(213, 213, 213, 0.723);
-  --c-btn-light-hover: rgba(237, 236, 236, 0.723);
-  --c-body: #ffffffd4;
-  --font-base: "Clahdisplay", sans-serif;
-  --box-shadow: 8px 10px 14px rgba(9, 9, 9, 0.442);
-  --transition: all 0.3s ease;
-}
-body {
-  font-family: var(--font-base);
-  line-height: 1.7;
-  color: var(--c-body);
-}
-p {
-  color: var(--c-dark);
-}
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: 600;
-  color: var(--c-dark);
-}
-ul {
-  direction: unset;
-}
-a {
-  text-decoration: none;
-  color: var(--c-body);
-  transition: var(--transition);
-  position: relative;
-  z-index: 10;
-}
-a:hover {
-  color: var(--c-brand);
-}
-a i {
-  transition: transform 0.3s ease, color 0.2s ease;
-  cursor: pointer;
-}
-a:hover .cpp {
-  transform: scale(0.2); /* leicht vergrößern */
-  color: rgb(0, 149, 255); /* z. B. bläulicher Effekt beim Hover (optional) */
-}
-a:hover .html {
-  transform: scale(0.2); /* leicht vergrößern */
-  color: rgb(255, 89, 0); /* z. B. bläulicher Effekt beim Hover (optional) */
-}
-a:hover .css {
-  transform: scale(0.2); /* leicht vergrößern */
-  color: rgb(0, 94, 255); /* z. B. bläulicher Effekt beim Hover (optional) */
-}
-a:hover .java {
-  transform: scale(0.2); /* leicht vergrößern */
-  color: rgb(0, 200, 255); /* z. B. bläulicher Effekt beim Hover (optional) */
-}
-a:hover .js {
-  transform: scale(0.2); /* leicht vergrößern */
-  color: rgb(255, 251, 0); /* z. B. bläulicher Effekt beim Hover (optional) */
-}
-a:hover .github {
-  transform: scale(0.2); /* leicht vergrößern */
-  color: rgb(168, 168, 168); /* z. B. bläulicher Effekt beim Hover (optional) */
-}
-img {
-  max-width: 100%;
-  height: auto;
-}
-.section-padding {
-  padding-top: 120px;
-  padding-bottom: 100px;
-}
-.theme-shadow {
-  box-shadow: var(--box-shadow);
-}
-.image-zoom {
-  position: relative;
-  overflow: hidden;
-}
-.image-zoom-wrapper {
-  overflow: hidden;
-  position: relative;
-}
-.image-zoom-wrapper img {
-  transition: var(--transition);
-}
-.image-zoom:hover .image-zoom-wrapper img {
-  transform: scale(1.1);
-}
-.navbar {
-  box-shadow: var(--box-shadow);
-  max-height: 10%;
-  margin: 0 0;
-  padding: 5px 0;
-  background-color: rgba(255, 255, 255, 0.734);
-}
-a.nav-link {
-  font-size: 1.4rem;
-}
-.navbar-nav .nav-link {
-  font-weight: 500;
-  color: var(--c-dark);
-}
-.navbar-nav .nav-link:hover {
-  font-weight: 500;
-  color: var(--c-brand);
-}
-.navbar-nav .nav-link.active {
-  color: var(--c-brand);
-}
-.navbar-toggler {
-  border: 2px solid #000;
-  border-radius: 7px;
-}
-.btn {
-  font-weight: 500;
-  font-size: 1.4rem;
-  border-radius: 11px;
-  padding: 2px 12px;
-  margin-top: 60px;
-  border-color: #5a5a5a93;
-}
-.btn-brand {
-  background-color: var(--c-brand);
-  border-color: rgba(0, 0, 0, 0.43);
-  color: #fff;
-}
-.btn-sat {
-  background-color: var(--c-dark-sat);
-  border-color: rgba(0, 0, 0, 0.43);
-  color: #fff;
-}
-.btn-brand:hover {
-  background-color: var(--c-brand-light);
-  color: #fff;
-  border-color: #000;
-}
-.btn-sat:hover {
-  background-color: var(--c-dark-hover);
-  color: #fff;
-  border-color: #000;
-}
-.btn-light {
-  background-color: var(--c-btn-light);
-  border-color: #212529a8;
-}
-.btn-light:hover {
-  background-color: var(--c-btn-light-hover);
-  border-color: #212529a8;
-}
-#hero {
-  background: linear-gradient(
-      rgba(var(--c-brand-rgb), 0.3),
-      rgba(var(--c-brand-rgb), 0.3)
-    ),
-    url(../images/bg.jpg);
-  background-size: cover;
-  width: 100%;
-  height: auto;
-  background-position: center;
-  background-attachment: scroll;
-}
-.section-title {
-  margin-bottom: 60px;
-}
-.line {
-  width: 60px;
-  height: 4px;
-  background-color: var(--c-brand);
-  margin: 10px auto 14px auto;
-}
-.lineBlck {
-  width: 70%;
-  height: 4px;
-  background-color: black;
-  margin: 10px auto 14px auto;
-}
-.upcoming {
-  color: red;
-}
-h6 i {
-  margin: 16px;
-}
-.section-title .line {
-  width: 60px;
-  height: 4px;
-  background-color: var(--c-brand);
-  margin: 10px auto 14px auto;
-}
-.section-title p {
-  max-width: 500px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.iconbox {
-  width: 10px;
-  height: 10px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  background: rgba(var(--c-brand-rgb), 0.04);
-  color: var(--c-dark);
-  font-size: 34px;
-  flex: none;
-}
-.iconboxNav {
-  width: 10px;
-  height: 10px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  background: rgba(var(--c-brand-rgb), 0);
-  color: var(--c-brand);
-  font-size: 18px;
-  flex: none;
-  padding: 10px;
-}
-.service {
-  position: relative;
-  overflow: hidden;
-  z-index: 2;
-}
-.service p {
-  color: #fff;
-}
-p {
-  font-size: 1.4rem;
-}
-.service::after {
-  content: "";
-  width: 1%;
-  height: 1%;
-  background: rgba(var(--c-brand-rgb), 0.2);
-  position: absolute;
-  bottom: 5px;
-  right: 5px;
-  transition: var(--transition);
-}
-.service:hover::after {
-  width: 100%;
-  height: 100%;
-  background: var(--c-brand);
-  z-index: -1;
-}
-.service:hover h5,
-.service:hover p {
-  color: #fff;
-}
-.service:hover .iconbox {
-  background-color: rgba(149, 149, 149, 0.734), 0.1;
-  color: #fff;
-}
-#counter {
-  background: linear-gradient(
-      rgba(var(--c-brand-rgb), 0.7),
-      rgba(var(--c-brand-rgb), 0.7)
-    ),
-    url(../images/bg0.jpg);
-  background-position: center;
-  background-size: cover;
-  width: 80vw;
-  margin-left: 10vw;
-}
-.portfolio-item .iconbox {
-  color: var(--c-brand);
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  opacity: 0;
-}
-.portfolio-item:hover .iconbox {
-  opacity: 1;
-  top: 50%;
-}
-.review small {
-  font-weight: 600;
-  text-transform: uppercase;
-  color: var(--c-brand);
-}
-.review-head {
-  position: relative;
-}
-.review-head::after {
-  content: "";
-  width: 28px;
-  height: 28px;
-  position: absolute;
-  bottom: -14px;
-  background-color: #fff;
-  transform: rotate(45deg);
-}
-.team-member-content {
-  background-color: var(--c-brand);
-  position: absolute;
-  bottom: -24px;
-  left: 50%;
-  width: calc(100% - 80px);
-  transform: translateX(-50%);
-  padding: 10px;
-  transition: var(--transition);
-  opacity: 0;
-}
-.team-member:hover .team-member-content {
-  opacity: 1;
-  bottom: 24px;
-}
-#contact {
-  position: relative;
-  z-index: 2;
-}
-#contact::after {
-  content: "";
-  width: 100%;
-  width: 70%;
-  background: linear-gradient(
-      rgba(var(--c-brand-rgb), 0.7),
-      rgba(var(--c-brand-rgb), 0.7)
-    ),
-    url(../images/bg.jpg);
-  background-position: center;
-  background-size: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-}
-#contact .form-control {
-  border-radius: 5px;
-}
-#contact .form-control:focus {
-  box-shadow: none;
-  border-color: var(--c-brand);
-}
-footer {
-  padding-top: 60px;
-}
-.footer-top {
-  padding-bottom: 20px;
-  border-bottom: 1px solid rgba(91, 91, 91, 0.6);
-}
-.footer-bottom {
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-footer a,
-footer li,
-footer p {
-  color: rgba(255, 255, 255, 0.6);
-}
-footer ul {
-  list-style: none;
-  padding: 0;
-}
-footer .line {
-  width: 40px;
-  height: 3px;
-  background-color: var(--c-brand);
-  margin-top: 12px;
-  margin-bottom: 22px;
-}
-.social-icons a {
-  width: 40px;
-  height: 40px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  background-color: rgba(255, 255, 255, 0.5);
-  border-radius: 10px;
-}
-.social-icons a:hover {
-  background-color: var(--c-brand);
-}
-#imp {
-  background-color: #242424;
-}
-#imp h1 {
-  padding-left: 5%;
-  color: #f0f8ff;
-  font-size: 1.8rem;
-}
-#imp h2 {
-  padding-left: 5%;
-  color: #f0f8ff;
-  font-size: 1.2rem;
-}
-#imp p {
-  padding-left: 5%;
-  padding-right: 5%;
-  color: #f0f8ff;
-  font-size: 1rem;
-}
-#imp ul {
-  padding-left: 13%;
-  padding-right: 5%;
-  color: #f0f8ff;
-  font-size: 1rem;
-}
-#imp a {
-  margin-left: 5%;
-  color: #b1b1b1;
-  margin-bottom: 3%;
-}
-#imp a:hover {
-  color: var(--c-brand-light);
-}
-#imp button {
-  background-color: #bcbcbc;
-  border: 2px solid #000;
-  margin-left: 5%;
-  margin-top: 3px;
-  border-radius: 9px;
-  width: 147px;
-  height: 32px;
-  font-size: 1rem;
-}
-#imp button:hover {
-  background-color: #8a8a8a;
-}
+  </head>
+  <body data-bs-spy="scroll" data-bs-target=".navbar">
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-xxl sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="#"
+          ><img src="images/3 nearlyBlack.png" alt="" width="350px" /> </a
+        ><button
+          class="navbar-toggler"
+          data-bs-target="#navbarNav"
+          data-bs-toggle="collapse"
+          type="button"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon" style="font-size: 1.1rem"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <!-- nav-link von home war früher #home, Platz der id an falscher Stelle gesetzt, mit # ist der Home button in der navbar jetz erstmal funktionabel -->
+            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#interest">Interests</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">SetUp|Office|Repo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#sats">Bitcoin-Cashback</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="mailto:lutr58@gmail.com"
+                >Mail
+                <div class="iconboxNav me-5">
+                  <i class="ri-mail-send-line"></i></div
+              ></a>
+            </li>
+            <!-- <li class="nav-item">
+            <a class="nav-link" href="https://www.instagram.com/lt_swdev_?igsh=MTFwajE3Mmk3N2QzaQ==">Instagram <div class="iconboxNav me-5"><i class="ri-instagram-line"></i></div></a>
+          </li> -->
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- HERO --><!-- fixit -->
+    <section id="home" class="section">
+      <section
+        class="min-vh-100 d-flex align-items-center text-center"
+        id="hero"
+      >
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h1
+                data-aos="fade-left"
+                data-aos-delay="1220"
+                class="text-uppercase fw-semibold text-white display-1"
+              >
+                Welcome to my website
+              </h1>
+              <div data-aos="fade-right" data-aos-delay="2920">
+                  <h2
+                    class="text-uppercase mt-3 mb-4 text-white"
+                    data-aos="fade-right"
+                    data-aos-delay="2820"
+                  >
+                    I am a software developer with love for design
+                  </h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <!-- ABOUT -->
+    <section class="section-padding" id="about">
+      <div class="container">
+        <div class="row justify-content-between mt-180">
+          <div
+            class="col-13 text-center"
+            data-aos="fade-down"
+            data-aos-delay="50"
+          >
+            <div class="section-title">
+              <h1 class="display-3 fw-semibold">about me</h1>
+              <div class="line"></div>
+              <p>
+                I love programming and enjoy learning new things every day. I
+                envision a bright future full of exciting technological advances
+                that will connect people, encourage the exchange of ideas, and
+                promote collective growth. It is important to me to understand
+                my customers thoroughly so that I can understand their
+                perspectives and thoughts. This understanding enables us to
+                develop optimal solutions together and implement them.
+              </p>
+              <br /><br />
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-between align-items-center">
+          <div class="col-lg-6" data-aos="fade-down" data-aos-delay="50">
+            <img src="images/me3.jpg" alt="image error" width="400px" style="margin-bottom:3rem ;" />
+          </div>
+          <div class="col-lg-5" data-aos="fade-down" data-aos-delay="130">
+            <h1>L.Trapp coding</h1>
+            <p class="mt-3 mb-3">
+              I'm a junior software developer. For my progress and programming journey, it's important for me to
+              dive deeper into various languages and technologies, driven by my
+              curiosity for new things and my love for learning. My preferred
+              methods of learning include:
+            </p>
+            <div class="d-flex pt-3 mb-4">
+              <div class="iconbox me-5">
+                <i class="ri-git-repository-line"></i>
+              </div>
+              <div>
+                <h5>Read books</h5>
+                <!-- <p>Lorem ipsum dolofugit! Nulla, gfhggff eligendi.</p> -->
+              </div>
+            </div>
+            <div class="d-flex pt-4 mb-4">
+              <div class="iconbox me-5">
+                <i class="ri-slideshow-4-line"></i>
+              </div>
+              <div>
+                <h5>Watch content</h5>
+                <!-- <p>Lorem ipsum dolor sitpisci sedit! Nulla, eligendi.</p> -->
+              </div>
+            </div>
+            <div class="d-flex pt-4 mb-4">
+              <div class="iconbox me-5"><i class="ri-code-box-line"></i></div>
+              <div>
+                <h5>Learning by doing</h5>
+                <!-- <p>Lorem ipsum dolor sitpisci sedit! Nulla, eligendi.</p> -->
+              </div>
+            </div>
+            <div class="d-flex pt-4 mb-4">
+              <div class="iconbox me-5">
+                <i class="ri-shake-hands-line"></i>
+              </div>
+              <div><h5>Get in contact & network</h5></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- INTERESTS SERVICE-->
+    <section class="section-padding" id="interest">
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-12 text-center"
+            data-aos="fade-down"
+            data-aos-delay="50"
+          >
+            <div class="section-title">
+              <h1 class="display-3 fw-semibold">
+                I am interested in these areas
+              </h1>
+              <div class="line"></div>
+              <p>
+                I am interested in different areas. My programming interests
+                include a variety of languages ​​and technologies that I would
+                like to learn and gain experience. One of my aspirations is to
+                continue to grow and develop step by step.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row g-4 text-center">
+           <div
+            class="col-lg-3 col-sm-6"
+            data-aos="fade-down"
+            data-aos-delay="50"
+          >
+            <div class="service theme-shadow p-lg-5 p-5">
+              <div class="iconbox"><i class="ri-voice-recognition-line"></i></div>
+              <h5 class="mt-4 mb-3">C++</h5>
+              <p>low-level & embedded sw development</p>
+            </div>
+          </div>
+          <div
+            class="col-lg-3 col-sm-6"
+            data-aos="fade-down"
+            data-aos-delay="50"
+          >
+            <div class="service theme-shadow p-lg-5 p-5">
+              <div class="iconbox"><i class="ri-pages-line"></i></div>
+              <h5 class="mt-4 mb-3">web design</h5>
+              <p>different technologies, as down below</p>
+              <p></p>
+            </div>
+          </div>
+          <div
+            class="col-lg-3 col-sm-6"
+            data-aos="fade-down"
+            data-aos-delay="50"
+          >
+            <div class="service theme-shadow p-lg-5 p-5">
+              <div class="iconbox"><i class="ri-stack-fill"></i></div>
+              <h5 class="mt-4 mb-3">App</h5>
+              <p>progressiv web / native / cross platform</p>
+            </div>
+          </div>
+          <div
+            class="col-lg-3 col-sm-6"
+            data-aos="fade-down"
+            data-aos-delay="50"
+          >
+            <div class="service theme-shadow p-lg-5 p-5">
+              <div class="iconbox"><i class="ri-android-line"></i></div>
+              <h5 class="mt-4 mb-3">Android</h5>
+              <p>android programming 'll coming soon</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- COUNTER  BANNER-->
+    <section class="selection-padding" id="counter">
+      <div class="container text-center">
+        <div class="row g-4">
+          <div data-aos="fade-down" data-aos-delay="250">
+            <h6 class="text-white display-6">learning at the moment</h6>
+            <h5 class="text-white display-4">
+
+              <a href="https://www.google.com/search?q=c+plus+plus&sca_esv=84f78223e416b16a&rlz=1C1CHBF_deDE1176DE1176&sxsrf=AE3TifM3_KOZgOZ2fX4QupBR0oKScXpPaQ%3A1762598275568&ei=gx0Pabm7Iouoi-gP1pGLuQw&oq=c+plus&gs_lp=Egxnd3Mtd2l6LXNlcnAiBmMgcGx1cyoCCAAyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIOEC4YgAQYxwEYjgUYrwEyBRAAGIAEMgUQABiABDILEC4YgAQYxwEYrwEyBRAAGIAESII4UJsHWMMscAF4AZABAJgBigGgAYcFqgEDNS4yuAEDyAEA-AEBmAIIoAKnBcICBxAjGLADGCfCAgoQABiwAxjWBBhHwgINEAAYgAQYsAMYQxiKBcICChAjGIAEGCcYigXCAgoQABiABBhDGIoFwgINEAAYgAQYsQMYQxiKBcICDRAAGIAEGLEDGBQYhwLCAggQABiABBixA8ICCxAAGIAEGLEDGIMBwgIEECMYJ8ICEBAjGPAFGIAEGCcYyQIYigXCAhAQLhiABBjHARgnGIoFGK8BwgIQEAAYgAQYsQMYQxiDARiKBcICDBAjGIAEGBMYJxiKBcICDBAAGIAEGEMYigUYCsICBRAuGIAEmAMAiAYBkAYKkgcDNi4yoAeoRLIHAzUuMrgHogXCBwUwLjQuNMgHGA&sclient=gws-wiz-serp" target="_self">
+                <i class="devicon-cplusplus-plain" style="color: white; font-size: 3rem; padding-right: 0.6rem;"></i>
+              </a>
+
+              <a href="https://www.google.com/search?q=html&rlz=1C1CHBF_deDE1176DE1176&oq=html&gs_lcrp=EgZjaHJvbWUyEQgAEEUYORhDGLEDGIAEGIoFMgoIARAAGLEDGIAEMgwIAhAAGEMYgAQYigUyBggDEEUYPDIGCAQQRRg8MgYIBRBFGDwyBggGEEUYQTIGCAcQRRhB0gEIMTUwMGowajeoAgCwAgA&sourceid=chrome&ie=UTF-8" target="_self">
+                <i class="ri-html5-line html"></i>
+              </a>
+              
+              <a href="https://www.google.com/search?q=css+3&sca_esv=84f78223e416b16a&rlz=1C1CHBF_deDE1176DE1176&sxsrf=AE3TifNBJSDFdGxq4GWK935P7wXjNImwOA%3A1762598291077&ei=kx0PaYa1BNvYi-gPmIWIkQc&ved=0ahUKEwjGypWoruKQAxVb7AIHHZgCInIQ4dUDCBE&uact=5&oq=css+3&gs_lp=Egxnd3Mtd2l6LXNlcnAiBWNzcyAzMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABEiqJVDsCFiVI3ACeAGQAQKYAXagAfoJqgEEMTAuNbgBA8gBAPgBAZgCCKACigWoAhTCAgoQABiwAxjWBBhHwgINEAAYgAQYsAMYQxiKBcICChAjGIAEGCcYigXCAgoQABiABBgUGIcCwgIJEAAYgAQYChgLwgIMEAAYgAQYQxiKBRgKwgIFEAAY7wXCAg0QIxiABBgnGIoFGOoCwgITECMY8AUYgAQYJxjJAhiKBRjqAsICEBAjGPAFGIAEGCcYigUY6gLCAgcQIxgnGOoCwgITEAAYgAQYQxi0AhiKBRjqAtgBAcICExAuGIAEGEMYtAIYigUY6gLYAQHCAgQQIxgnwgIKEAAYgAQYQxiKBcICCBAAGIAEGLEDwgIQEC4YgAQY0QMYQxjHARiKBcICCxAuGIAEGMcBGK8BwgIIEC4YgAQYsQPCAg0QABiABBixAxhDGIoFwgILEAAYgAQYsQMYgwHCAhAQABiABBixAxhDGIMBGIoFwgIHEAAYgAQYCsICGhAuGIAEGMcBGK8BGJcFGNwEGN4EGOAE2AEBmAMF8QXN_ffms00MjYgGAZAGCroGBggBEAEYAZIHAzQuNKAHlYoBsgcDMi40uAeABcIHBTAuMy41yAcb&sclient=gws-wiz-serp" target="_self">
+                <i class="ri-css3-line css"></i>
+              </a>
+
+              <a href="https://www.google.com/search?q=javascript&sca_esv=84f78223e416b16a&rlz=1C1CHBF_deDE1176DE1176&sxsrf=AE3TifMAURWo8dgFTxZGt0kHuQdq4kF5Pw%3A1762598369015&ei=4R0PadVbs6qL6A-Vn_b4Bg&oq=java&gs_lp=Egxnd3Mtd2l6LXNlcnAiBGphdmEqAggAMg0QABiABBixAxhDGIoFMhAQABiABBixAxiDARgUGIcCMgsQABiABBixAxiDATIKEAAYgAQYQxiKBTIKEAAYgAQYQxiKBTIQEAAYgAQYsQMYQxiDARiKBTIKEAAYgAQYQxiKBTINEAAYgAQYsQMYQxiKBTIKEAAYgAQYQxiKBTIIEC4YgAQYsQNIqyFQzAZY8hdwAngBkAEAmAFhoAH6BKoBATi4AQPIAQD4AQGYAgqgAqEFqAIUwgIKEAAYsAMY1gQYR8ICDRAAGIAEGLADGEMYigXCAgoQIxiABBgnGIoFwgIFEAAYgATCAgsQLhiABBjHARivAcICCBAAGIAEGLEDwgIOEC4YgAQYsQMY0QMYxwHCAg0QIxiABBgnGIoFGOoCwgITECMY8AUYgAQYJxjJAhiKBRjqAsICEBAjGPAFGIAEGCcYigUY6gLCAgcQIxgnGOoCwgITEAAYgAQYQxi0AhiKBRjqAtgBAcICGRAuGIAEGNEDGEMYtAIYxwEYigUY6gLYAQHCAgoQIxjwBRgnGMkCwgIOEC4YgAQYsQMYgwEYigXCAgoQLhiABBgnGIoFwgIKEC4YgAQYQxiKBcICCxAuGIAEGLEDGIMBmAMF8QWTWsCW2vMPtIgGAZAGCroGBggBEAEYAZIHAzkuMaAH2W2yBwM3LjG4B5gFwgcFMC41LjXIBx4&sclient=gws-wiz-serp" target="_self">
+                <i class="ri-javascript-line js"></i>
+              </a>
+
+              <a href="https://www.google.com/search?q=java&sca_esv=84f78223e416b16a&rlz=1C1CHBF_deDE1176DE1176&sxsrf=AE3TifOMwkI3GQgKC7xsNm3BzIU-IfKfPA%3A1762598410970&ei=Ch4PabLzOqrqi-gPnoKD2Q8&ved=0ahUKEwiyoKvhruKQAxUq9QIHHR7BIPsQ4dUDCBE&uact=5&oq=java&gs_lp=Egxnd3Mtd2l6LXNlcnAiBGphdmEyChAjGIAEGCcYigUyEBAAGIAEGLEDGIMBGBQYhwIyCxAAGIAEGLEDGIMBMgsQABiABBixAxiDATIKEAAYgAQYQxiKBTILEAAYgAQYsQMYgwEyBRAAGIAEMgUQABiABDILEAAYgAQYsQMYgwEyCxAAGIAEGLEDGIMBSOsSUJsHWIsRcAF4AZABAJgBQ6ABxQKqAQE2uAEDyAEA-AEBmAIHoALeAsICChAAGLADGNYEGEfCAg0QABiABBiwAxhDGIoFwgIOEAAYsAMY5AIY1gTYAQHCAhMQLhiABBiwAxhDGMgDGIoF2AEBwgIKEAAYgAQYFBiHApgDAIgGAZAGEboGBggBEAEYCZIHATegB-AnsgcBNrgH1wLCBwUwLjUuMsgHEw&sclient=gws-wiz-serp" target="_self">
+                <i class="ri-java-fill java"></i> 
+              </a>
+            
+              <a href="https://www.google.com/search?q=github&sca_esv=84f78223e416b16a&rlz=1C1CHBF_deDE1176DE1176&sxsrf=AE3TifPJE0fP3nJ8pIj7VxhIafsp0s542w%3A1762598459713&ei=Ox4Pab2qK6WNi-gPhtfv6Qg&ved=0ahUKEwj9s8r4ruKQAxWlxgIHHYbrO40Q4dUDCBE&uact=5&oq=github&gs_lp=Egxnd3Mtd2l6LXNlcnAiBmdpdGh1YjIKECMYgAQYJxiKBTIKECMYgAQYJxiKBTIKECMYgAQYJxiKBTIWEC4YgAQYsQMY0QMYQxiDARjHARiKBTINEAAYgAQYsQMYFBiHAjIIEAAYgAQYsQMyEBAAGIAEGLEDGIMBGBQYhwIyDRAAGIAEGLEDGEMYigUyDRAAGIAEGLEDGEMYigUyChAAGIAEGEMYigVI2zRQtAdYmydwA3gBkAEAmAFioAHoBaoBAjEwuAEDyAEA-AEBmAINoAKYBqgCEcICBxAjGLADGCfCAgoQABiwAxjWBBhHwgITEC4YgAQYsAMYQxjIAxiKBdgBAcICEBAAGIAEGLEDGEMYgwEYigXCAgUQABiABMICCxAAGIAEGLEDGIMBwgIKECMY8AUYJxjJAsICDRAjGIAEGCcYigUY6gLCAhMQIxjwBRiABBgnGMkCGIoFGOoCwgIHECMYJxjqAsICExAAGIAEGEMYtAIYigUY6gLYAQLCAhYQLhiABBhDGLQCGMgDGIoFGOoC2AECwgINECMY8AUYgAQYJxiKBcICEBAjGPAFGIAEGCcYyQIYigXCAhEQLhiABBixAxjRAxiDARjHAcICBxAjGPAFGCfCAgoQLhiABBhDGIoFwgIFEC4YgATCAgsQLhiABBjHARivAcICDhAuGIAEGLEDGIMBGIoFmAME8QX7jypY9ENccYgGAZAGC7oGBAgBGAi6BgYIAhABGAGSBwQxMi4xoAf9dbIHAzkuMbgHiwbCBwUwLjkuNMgHJQ&sclient=gws-wiz-serp" target="_self">
+                <i class="ri-github-fill github"></i>
+              </a>
+
+            </h5>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- PORTFOLIO SETUP OFFICE REPO  -->
+    <section class="section-padding" id="portfolio">
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-12 text-center"
+            data-aos="fade-down"
+            data-aos-delay="150"
+          >
+            <div class="section title">
+              <h1 class="display-4 fw-semibold" style="padding-top: 4rem ;">SetUp | Office | Repo</h1>
+              <div class="line"></div>
+              <p>A view pictures of my office</p>
+            </div>
+          </div>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-4" data-aos="fade-down" data-aos-delay="150">
+            <div class="portfolio-item image-zoom mt-4">
+              <div class="image-zoom-wrapper">
+                <img src="images/bg1.jpg" alt="image error" />
+              </div>
+              <a class="iconbox" data-fancybox="gallery" href="./images/bg0.jpg"
+                ><i class="ri-search-2-line"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="fade-down" data-aos-delay="150">
+            <div class="portfolio-item image-zoom mt-4">
+              <div class="image-zoom-wrapper">
+                <img src="images/bg0.jpg" alt="image error" />
+              </div>
+              <a class="iconbox" data-fancybox="gallery" href="./images/bg2.jpg"
+                ><i class="ri-search-2-line"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="fade-down" data-aos-delay="150">
+            <div class="portfolio-item image-zoom mt-4">
+              <div class="image-zoom-wrapper">
+                <img src="images/bg1.jpg" alt="image error" />
+              </div>
+              <a class="iconbox" data-fancybox="gallery" href="./images/bg0.jpg"
+                ><i class="ri-search-2-line"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div data-aos="fade-down" data-aos-delay="200">
+          <a
+            href="https://github.com/kaaas58"
+            class="d-flex justify-content-center"
+            ><button class="btn btn-brand center-btn">my Repo</button></a
+          >
+        </div>
+      </div>
+    </section>
+    <section class="section-padding" id="">
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-12 text-center"
+            data-aos="fade-down"
+            data-aos-delay="150"
+          >
+            <div class="section title">
+              <h1 class="display-4 fw-semibold">my grounding</h1>
+              <div class="line"></div>
+              <p>a few good words from which I was able to learn something</p>
+            </div>
+          </div>
+          <div data-aos="fade-down" data-aos-delay="200">
+            <a
+              href="https://www.youtube.com/@zenmeisterhinnerkpolenski" target="_blank"
+              class="d-flex justify-content-center"
+              ><button class="btn btn-brand center-btn">
+                Zen-Meister Hinnerk Polenski
+              </button></a
+            >
+          </div>
+          <div data-aos="fade-down" data-aos-delay="200">
+            <a
+              href="https://www.youtube.com/@ShiHengYiOnline/featured" target="_blank"
+              class="d-flex justify-content-center"
+              ><button class="btn btn-brand center-btn">Shi Heng Yi</button></a
+            >
+          </div>
+
+          <section class="section-padding" id="sats">
+           <div class="section title" style="text-align: center;" data-aos="fade-up" data-aos-delay="300">
+              <h1 class="display-4 fw-semibold">create your future</h1>
+              <div class="lineBlck" style="text-align: center;"></div>
+              <p>do your own research</p>
+            </div>
+
+          <div style="text-align: center; margin-top: 3rem ;">
+
+            <a href="https://www.bitpanda.com/?ref=575877680036968563" 
+            class="justify-content-center"
+            ><button class="btn btn-sat center-btn">Buy <span style="color: orange;">Bitcoin</span>, create Future!</button>
+            </a>
+
+            </div>
+            <div style="text-align: center; margin-top: 40px;" data-aos="fade-right" data-aos-delay="150">
+            
+           <a href="https://www.bitpanda.com/?ref=575877680036968563"
+              class="justify-content-center"
+            ><img src="images/onlyBtpnd.jpg" alt="image error" style="width:10rem; height:auto; border:2.5px solid black; border-radius:8px;"/>
+           </a>
+          </div>
+          <div style="text-align: center; margin-top: 65px;">
+            <a href="https://satsback.com/register/vRGoXWqGVQPM3kqE"
+            class="justify-content-center"
+            ><button class="btn btn-sat center-btn">Earn <span style="color: orange;">Bitcoin </span>- Cashback!</button>
+            </a>
+            </div>
+            <div style="text-align: center; margin-top: 40px;" data-aos="fade-left" data-aos-delay="150">
+            <a href="https://satsback.com/register/vRGoXWqGVQPM3kqE"
+              class="justify-content-center"
+            ><img src="images/onlySats.jpg" alt="image error" style="width:10rem; height:auto; border:2.5px solid black; border-radius:8px;"/>
+           </a>
+          </div>
+        </section>
+        <div data-aos="fade-up" data-aos-delay="800"
+     data-aos-duration="2500"
+     data-aos-easing="ease-in-out">
+          <img src="images/partner.jpg" style="margin-top: 0rem; margin-bottom: 0rem; padding-bottom: 0rem;" 8rem alt="">
+        </div>
+        </div>
+      </div>
+    </section>
+    <!-- FOOTER -->
+    <footer class="bg-dark">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row gy-9">
+            <div class="col-lg-3 col-sm-6">
+              <!-- <div class="line"></div> -->
+              <p>Please feel free to contact me</p>
+              <div>
+                <a
+                  href="https://www.instagram.com/lt_swdev_?igsh=MTFwajE3Mmk3N2QzaQ=="
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="32"
+                    height="32"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M12.001 9C10.3436 9 9.00098 10.3431 9.00098 12C9.00098 13.6573 10.3441 15 12.001 15C13.6583 15 15.001 13.6569 15.001 12C15.001 10.3427 13.6579 9 12.001 9ZM12.001 7C14.7614 7 17.001 9.2371 17.001 12C17.001 14.7605 14.7639 17 12.001 17C9.24051 17 7.00098 14.7629 7.00098 12C7.00098 9.23953 9.23808 7 12.001 7ZM18.501 6.74915C18.501 7.43926 17.9402 7.99917 17.251 7.99917C16.5609 7.99917 16.001 7.4384 16.001 6.74915C16.001 6.0599 16.5617 5.5 17.251 5.5C17.9393 5.49913 18.501 6.0599 18.501 6.74915ZM12.001 4C9.5265 4 9.12318 4.00655 7.97227 4.0578C7.18815 4.09461 6.66253 4.20007 6.17416 4.38967C5.74016 4.55799 5.42709 4.75898 5.09352 5.09255C4.75867 5.4274 4.55804 5.73963 4.3904 6.17383C4.20036 6.66332 4.09493 7.18811 4.05878 7.97115C4.00703 9.0752 4.00098 9.46105 4.00098 12C4.00098 14.4745 4.00753 14.8778 4.05877 16.0286C4.0956 16.8124 4.2012 17.3388 4.39034 17.826C4.5591 18.2606 4.7605 18.5744 5.09246 18.9064C5.42863 19.2421 5.74179 19.4434 6.17187 19.6094C6.66619 19.8005 7.19148 19.9061 7.97212 19.9422C9.07618 19.9939 9.46203 20 12.001 20C14.4755 20 14.8788 19.9934 16.0296 19.9422C16.8117 19.9055 17.3385 19.7996 17.827 19.6106C18.2604 19.4423 18.5752 19.2402 18.9074 18.9085C19.2436 18.5718 19.4445 18.2594 19.6107 17.8283C19.8013 17.3358 19.9071 16.8098 19.9432 16.0289C19.9949 14.9248 20.001 14.5389 20.001 12C20.001 9.52552 19.9944 9.12221 19.9432 7.97137C19.9064 7.18906 19.8005 6.66149 19.6113 6.17318C19.4434 5.74038 19.2417 5.42635 18.9084 5.09255C18.573 4.75715 18.2616 4.55693 17.8271 4.38942C17.338 4.19954 16.8124 4.09396 16.0298 4.05781C14.9258 4.00605 14.5399 4 12.001 4ZM12.001 2C14.7176 2 15.0568 2.01 16.1235 2.06C17.1876 2.10917 17.9135 2.2775 18.551 2.525C19.2101 2.77917 19.7668 3.1225 20.3226 3.67833C20.8776 4.23417 21.221 4.7925 21.476 5.45C21.7226 6.08667 21.891 6.81333 21.941 7.8775C21.9885 8.94417 22.001 9.28333 22.001 12C22.001 14.7167 21.991 15.0558 21.941 16.1225C21.8918 17.1867 21.7226 17.9125 21.476 18.55C21.2218 19.2092 20.8776 19.7658 20.3226 20.3217C19.7668 20.8767 19.2076 21.22 18.551 21.475C17.9135 21.7217 17.1876 21.89 16.1235 21.94C15.0568 21.9875 14.7176 22 12.001 22C9.28431 22 8.94514 21.99 7.87848 21.94C6.81431 21.8908 6.08931 21.7217 5.45098 21.475C4.79264 21.2208 4.23514 20.8767 3.67931 20.3217C3.12348 19.7658 2.78098 19.2067 2.52598 18.55C2.27848 17.9125 2.11098 17.1867 2.06098 16.1225C2.01348 15.0558 2.00098 14.7167 2.00098 12C2.00098 9.28333 2.01098 8.94417 2.06098 7.8775C2.11014 6.8125 2.27848 6.0875 2.52598 5.45C2.78014 4.79167 3.12348 4.23417 3.67931 3.67833C4.23514 3.1225 4.79348 2.78 5.45098 2.525C6.08848 2.2775 6.81348 2.11 7.87848 2.06C8.94514 2.0125 9.28431 2 12.001 2Z"
+                    ></path></svg></a
+                ><a class="p-2" href="#"
+                  ><img
+                    src="images/2LukasTrapp hardWhite.png"
+                    width="135px"
+                    alt=""
+                /></a>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <h5 class="mb-0 text-dark"></h5>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <h5 class="mb-0 text-white">LINKS</h5>
+              <!-- <div class="line"></div> -->
+              <ul>
+                <!-- <li><a href="#about">AboutMe</a></li>
+          <li><a href="#interest">Interests</a></li> -->
+                <li>
+                  <i class="ri-instagram-line"></i
+                  ><a
+                    href="https://www.instagram.com/lt_swdev_?igsh=MTFwajE3Mmk3N2QzaQ=="
+                    >Insta</a
+                  >
+                </li>
+                <li>
+                  <i class="ri-git-repository-line"></i
+                  ><a href="https://github.com/kaaas58">Repo</a>
+                </li>
+                <li>
+                  <i class="ri-mail-line"></i
+                  ><a href="mailto:lutr58@gmail.com">Mail</a>
+                </li>
+                <li>
+                  <i class="impressum"></i
+                  ><a href="./impressum.html">Impressum</a>
+                </li>
+                <!-- <li><a href="#">Career</a></li> -->
+              </ul>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <h5 class="mb-0 text-white">CONTACT ME</h5>
+              <!-- <div class="line"></div> -->
+              <ul>
+                <li>55118 Mainz</li>
+                <li>(+49)17662002093</li>
+                <li>lutr58@gmail.com</li>
+                <li>https://kaaas58.github.io/ltcoding/</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="row g-4 justify-content-between">
+            <div class="col-auto">
+              <p class="mb-0">
+                Copyright © L.Trapp coding. All rights reserved
+              </p>
+            </div>
+            <div class="col-auto"><p class="mb-0">designed by L.T.</p></div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+    const navbarCollapse = document.querySelector(".navbar-collapse");
+
+    navLinks.forEach((link) => {
+      link.addEventListener("click", () => {
+        if (navbarCollapse.classList.contains("show")) {
+          const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+            toggle: false,
+          });
+          bsCollapse.hide();
+        }
+      });
+    });
+  });
+</script>
+  </body>
+</html>
