@@ -83,9 +83,39 @@ a {
   text-decoration: none;
   color: var(--c-body);
   transition: var(--transition);
+  position: relative;
+  z-index: 10;
 }
 a:hover {
   color: var(--c-brand);
+}
+a i {
+  transition: transform 0.3s ease, color 0.2s ease;
+  cursor: pointer;
+}
+a:hover .cpp {
+  transform: scale(0.2); /* leicht vergrößern */
+  color: rgb(0, 149, 255); /* z. B. bläulicher Effekt beim Hover (optional) */
+}
+a:hover .html {
+  transform: scale(0.2); /* leicht vergrößern */
+  color: rgb(255, 89, 0); /* z. B. bläulicher Effekt beim Hover (optional) */
+}
+a:hover .css {
+  transform: scale(0.2); /* leicht vergrößern */
+  color: rgb(0, 94, 255); /* z. B. bläulicher Effekt beim Hover (optional) */
+}
+a:hover .java {
+  transform: scale(0.2); /* leicht vergrößern */
+  color: rgb(0, 200, 255); /* z. B. bläulicher Effekt beim Hover (optional) */
+}
+a:hover .js {
+  transform: scale(0.2); /* leicht vergrößern */
+  color: rgb(255, 251, 0); /* z. B. bläulicher Effekt beim Hover (optional) */
+}
+a:hover .github {
+  transform: scale(0.2); /* leicht vergrößern */
+  color: rgb(168, 168, 168); /* z. B. bläulicher Effekt beim Hover (optional) */
 }
 img {
   max-width: 100%;
