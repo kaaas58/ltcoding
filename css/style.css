@@ -270,24 +270,11 @@ h6 i {
   flex: none;
   padding: 10px;
 }
-/* 
-.service { /* old 
+.service {  
   position: relative;
   overflow: hidden;
   z-index: 2;
-} */
-
-.service {
-  position: relative;
-  overflow: hidden;
-  z-index: 2;
-
-  display: flex;
-  flex-direction: column;
-  height: 100%;
 }
-
-
 .service p {
   color: #fff;
   min-height: 48px; /* ggf. anpassen fix*/
