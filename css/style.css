@@ -274,6 +274,7 @@ h6 i {
   position: relative;
   overflow: hidden;
   z-index: 2;
+  /* min-height: 48px; */
 }
 .service p {
   color: #fff;
