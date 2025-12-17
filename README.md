@@ -46,7 +46,47 @@ Die Seite wurde bewusst **klar, ruhig und strukturiert** gehalten, um sowohl den
 Diese Website ist Teil meiner kontinuierlichen Weiterentwicklung als **angehender Softwareentwickler**. Der Fokus liegt nicht auf Perfektion, sondern auf **konstantem Lernen, Anwenden und Verbessern**.
 
 ---
+## 📸 Screenshots
+<!-- <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;"> -->
 
+<div style="display: flex; gap: 16px; flex-wrap: wrap;">
+
+  <a href="screenshots/head.png" target="_blank">
+    <img src="thumbnails/head.png" alt="Hero Section" width="220">
+  </a>
+
+  <a href="screenshots/me.png" target="_blank">
+    <img src="thumbnails/me.png" alt="About Me Section" width="220">
+  </a>
+
+  <a href="screenshots/tech.png" target="_blank">
+    <img src="thumbnails/tech.png" alt="Tech & Interests Section" width="220">
+  </a>
+
+</div>
+
+---
+## Structure
+```plaitext
+├── css/              # Stylesheets
+├── fonts/            # Schriftarten
+├── images/           # Allgemeine Bilder
+├── js/               # JavaScript-Dateien
+├── screenshots/      # Vollauflösende Screenshots der Website
+│  ├── head.png
+│  ├── me.png
+│  └── tech.png
+│
+├── thumbnails/       # Kleine Vorschau-Bilder für README
+│  ├── head.png
+│  ├── me.png
+│  └── tech.png
+│
+├── index.html        # Hauptseite
+├── impressum.html    # Impressum
+└── README.md         # Projektbeschreibung
+```
+---
 ## 🔮 Ausblick
 
 Geplant sind u. a.:
@@ -62,6 +102,9 @@ Geplant sind u. a.:
 
 **Lukas Trapp**
 Junior Software Developer
+<a href="https://kaaas58.github.io/ltcoding/" target="_blank">
+  Zur Website
+</a>
 GitHub: [https://github.com/kaaas58](https://github.com/kaaas58)
 
 ---
