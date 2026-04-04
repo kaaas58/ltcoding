@@ -108,3 +108,35 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
+
+// Dark mode toggle
+(function () {
+  const html = document.documentElement;
+  const saved = localStorage.getItem('theme');
+  if (saved === 'dark') html.setAttribute('data-theme', 'dark');
+
+  document.addEventListener('DOMContentLoaded', function () {
+    const toggle = document.getElementById('darkModeToggle');
+    const icon = document.getElementById('darkModeIcon');
+    if (!toggle) return;
+
+    function applyTheme(dark) {
+      if (dark) {
+        html.setAttribute('data-theme', 'dark');
+        icon.className = 'ri-sun-line';
+      } else {
+        html.removeAttribute('data-theme');
+        icon.className = 'ri-moon-line';
+      }
+    }
+
+    // Sync icon on load
+    applyTheme(html.getAttribute('data-theme') === 'dark');
+
+    toggle.addEventListener('click', function () {
+      const isDark = html.getAttribute('data-theme') === 'dark';
+      applyTheme(!isDark);
+      localStorage.setItem('theme', !isDark ? 'dark' : 'light');
+    });
+  });
+})();
