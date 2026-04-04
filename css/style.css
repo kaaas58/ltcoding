@@ -751,6 +751,10 @@ footer .line {
 }
 .carousel-control-prev.project-arrow { left: -62px; }
 .carousel-control-next.project-arrow { right: -62px; }
+@media (max-width: 767px) {
+  .carousel-control-prev.project-arrow { left: -28px; z-index: 20; }
+  .carousel-control-next.project-arrow { right: -28px; z-index: 20; }
+}
 /* feste Höhe für alle Slides */
 #projectsCarousel .carousel-inner {
   height: 430px;

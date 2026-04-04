@@ -103,7 +103,7 @@ document.addEventListener('DOMContentLoaded', function () {
 (function () {
   const html = document.documentElement;
   const saved = localStorage.getItem('theme');
-  if (saved === 'dark') html.setAttribute('data-theme', 'dark');
+  if (saved !== 'light') html.setAttribute('data-theme', 'dark');
 
   document.addEventListener('DOMContentLoaded', function () {
     const buttons = document.querySelectorAll('.darkmode-btn');
