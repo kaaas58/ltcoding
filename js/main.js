@@ -1,13 +1,3 @@
-AOS.init({
-  offset: 120,
-  delay: 0,
-  duration: 900,
-  easing: 'ease',
-  once: false,
-  mirror: false,
-  anchorPlacement: 'top-bottom',
-});
-
 // Navbar: hide on scroll down, show on scroll up
 (function () {
   const navbar = document.getElementById('mainNav');
@@ -116,27 +106,25 @@ document.addEventListener('DOMContentLoaded', function () {
   if (saved === 'dark') html.setAttribute('data-theme', 'dark');
 
   document.addEventListener('DOMContentLoaded', function () {
-    const toggle = document.getElementById('darkModeToggle');
-    const icon = document.getElementById('darkModeIcon');
-    if (!toggle) return;
+    const buttons = document.querySelectorAll('.darkmode-btn');
+    if (!buttons.length) return;
 
     function applyTheme(dark) {
       if (dark) {
         html.setAttribute('data-theme', 'dark');
-        icon.className = 'ri-sun-line';
+        document.querySelectorAll('.darkmode-icon').forEach(i => i.className = 'ri-sun-line darkmode-icon');
       } else {
         html.removeAttribute('data-theme');
-        icon.className = 'ri-moon-line';
+        document.querySelectorAll('.darkmode-icon').forEach(i => i.className = 'ri-moon-line darkmode-icon');
       }
     }
 
-    // Sync icon on load
     applyTheme(html.getAttribute('data-theme') === 'dark');
 
-    toggle.addEventListener('click', function () {
+    buttons.forEach(btn => btn.addEventListener('click', function () {
       const isDark = html.getAttribute('data-theme') === 'dark';
       applyTheme(!isDark);
       localStorage.setItem('theme', !isDark ? 'dark' : 'light');
-    });
+    }));
   });
 })();

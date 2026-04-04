@@ -47,7 +47,6 @@
       href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="css/satoshi.css" />
     <link href="css/style.css" rel="stylesheet" />
 
@@ -64,21 +63,27 @@
       <div class="container-fluid px-4">
         <a class="navbar-brand" href="#"
           ><img src="images/logos/ltcoding.svg" alt="LT Coding Logo" /> </a
-        ><button
-          class="navbar-toggler"
-          data-bs-target="#navbarNav"
-          data-bs-toggle="collapse"
-          type="button"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
         >
-          <span class="burger">
-            <span class="burger-line"></span>
-            <span class="burger-line"></span>
-            <span class="burger-line"></span>
-          </span>
-        </button>
+        <div class="d-xxl-none ms-auto d-flex align-items-center gap-2">
+          <button
+            class="navbar-toggler"
+            data-bs-target="#navbarNav"
+            data-bs-toggle="collapse"
+            type="button"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="burger">
+              <span class="burger-line"></span>
+              <span class="burger-line"></span>
+              <span class="burger-line"></span>
+            </span>
+          </button>
+          <button class="btn-darkmode darkmode-btn" aria-label="Toggle dark mode">
+            <i class="ri-moon-line darkmode-icon"></i>
+          </button>
+        </div>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item"><a class="nav-link" href="#home" data-section="home">Home</a></li>
@@ -101,9 +106,9 @@
                 <div class="iconboxNav"><i class="ri-mail-send-line"></i></div>
               </a>
             </li>
-            <li class="nav-item d-flex align-items-center ps-2">
-              <button class="btn-darkmode" id="darkModeToggle" aria-label="Toggle dark mode">
-                <i class="ri-moon-line" id="darkModeIcon"></i>
+            <li class="nav-item d-none d-xxl-flex align-items-center ps-2">
+              <button class="btn-darkmode darkmode-btn" aria-label="Toggle dark mode">
+                <i class="ri-moon-line darkmode-icon"></i>
               </button>
             </li>
             <!-- <li class="nav-item">
@@ -123,17 +128,13 @@
           <div class="row">
             <div class="col-12">
               <h1
-                data-aos="fade-left"
-                data-aos-delay="1220"
                 class="text-uppercase fw-semibold text-white display-1"
               >
                 Welcome to my website
               </h1>
-              <div data-aos="fade-right" data-aos-delay="2920">
+              <div>
                   <h2
                     class="text-uppercase mt-3 mb-4 text-white"
-                    data-aos="fade-right"
-                    data-aos-delay="2820"
                   >
                     I am a software developer with love for design
                   </h2>
@@ -149,8 +150,6 @@
         <div class="row justify-content-between mt-180">
           <div
             class="col-13 text-center"
-            data-aos="fade-down"
-            data-aos-delay="50"
           >
             <div class="section-title">
               <h1 class="display-3 fw-semibold">about me</h1>
@@ -169,10 +168,10 @@
           </div>
         </div>
         <div class="row justify-content-between align-items-center">
-          <div class="col-lg-6" data-aos="fade-down" data-aos-delay="50">
+          <div class="col-lg-6">
             <img src="images/me3.jpg" alt="image error" width="400px" style="margin-bottom:3rem ;" />
           </div>
-          <div class="col-lg-5" data-aos="fade-down" data-aos-delay="130">
+          <div class="col-lg-5">
             <h1>L.Trapp coding</h1>
             <p class="mt-3 mb-3">
               I'm a junior software developer. For my progress and programming journey, it's important for me to
@@ -220,7 +219,7 @@
       <div class="container">
 
         <!-- Heading -->
-        <div class="row" data-aos="fade-down" data-aos-delay="50">
+        <div class="row">
           <div class="col-12 text-center">
             <div class="section-title">
               <h1 class="display-3 fw-semibold">A view of my Projects</h1>
@@ -238,7 +237,7 @@
         </div>
 
         <!-- Carousel -->
-        <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="100">
+        <div class="row justify-content-center">
           <div class="col-lg-8 col-md-10 col-12 px-5 px-md-4">
 
             <div id="projectsCarousel" class="carousel slide" data-bs-ride="false" data-bs-touch="true">
@@ -314,7 +313,7 @@
     <section class="selection-padding" id="counter">
       <div class="container text-center">
         <div class="row g-4">
-          <div data-aos="fade-down" data-aos-delay="250">
+          <div>
             <h6 class="text-white display-6">Learning & exploration</h6>
             <h5 class="text-white display-4">
 
@@ -353,8 +352,6 @@
         <div class="row">
           <div
             class="col-12 text-center"
-            data-aos="fade-down"
-            data-aos-delay="150"
           >
             <div class="section title">
               <h1 class="display-4 fw-semibold" style="padding-top: 4rem ;">SetUp | Office | Repo</h1>
@@ -364,7 +361,7 @@
           </div>
         </div>
         <div class="row g-4">
-          <div class="col-md-4" data-aos="fade-down" data-aos-delay="150">
+          <div class="col-md-4">
             <div class="portfolio-item image-zoom mt-4">
               <div class="image-zoom-wrapper">
                 <img src="images/bg1.jpg" alt="image error" />
@@ -374,7 +371,7 @@
               ></a>
             </div>
           </div>
-          <div class="col-md-4" data-aos="fade-down" data-aos-delay="150">
+          <div class="col-md-4">
             <div class="portfolio-item image-zoom mt-4">
               <div class="image-zoom-wrapper">
                 <img src="images/bg0.jpg" alt="image error" />
@@ -384,7 +381,7 @@
               ></a>
             </div>
           </div>
-          <div class="col-md-4" data-aos="fade-down" data-aos-delay="150">
+          <div class="col-md-4">
             <div class="portfolio-item image-zoom mt-4">
               <div class="image-zoom-wrapper">
                 <img src="images/bg1.jpg" alt="image error" />
@@ -395,7 +392,7 @@
             </div>
           </div>
         </div>
-        <div data-aos="fade-down" data-aos-delay="200">
+        <div>
           <a
             href="https://github.com/kaaas58"
             class="d-flex justify-content-center"
@@ -528,7 +525,6 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="js/main.js"></script>
     <script>
   document.addEventListener("DOMContentLoaded", function () {

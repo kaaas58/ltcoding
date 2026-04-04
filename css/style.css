@@ -214,7 +214,7 @@ a.nav-link {
   }
 }
 .navbar-toggler {
-  border: 1.5px solid rgba(0,0,0,0.18);
+  border: none;
   border-radius: 8px;
   padding: 6px 8px;
   background: none;
