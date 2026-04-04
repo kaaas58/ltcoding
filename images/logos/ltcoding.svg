@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 160" height="160" width="480">
+  <rect transform="skewX(-8)" stroke-width="4" stroke="#333" fill="none" rx="16" height="125" width="444" y="15" x="18"></rect>
+  <text letter-spacing="-5.5" fill="#222" font-weight="700" font-size="90" font-style="italic" font-family="Georgia, serif" y="92" x="32">L-TRAPP</text>
+  <text letter-spacing="3" fill="#555" font-size="16.5" font-family="Arial, sans-serif" y="125" x="35">LUKAS TRAPP • CODING</text>
+</svg>

@@ -47,6 +47,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="css/satoshi.css" />
     <link href="css/style.css" rel="stylesheet" />
 
 
@@ -58,10 +59,10 @@
   </head>
   <body data-bs-spy="scroll" data-bs-target=".navbar">
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-xxl sticky-top">
-      <div class="container">
+    <nav class="navbar navbar-expand-xxl" id="mainNav">
+      <div class="container-fluid px-4">
         <a class="navbar-brand" href="#"
-          ><img src="images/3 nearlyBlack.png" alt="" width="350px" /> </a
+          ><img src="images/logos/ltcoding.svg" alt="LT Coding Logo" /> </a
         ><button
           class="navbar-toggler"
           data-bs-target="#navbarNav"
@@ -81,7 +82,7 @@
               <a class="nav-link" href="#about">About me</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#interest">Interests</a>
+              <a class="nav-link" href="#projects">Projects</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#portfolio">SetUp|Office|Repo</a>
@@ -98,11 +99,9 @@
 
             
             <li class="nav-item">
-              <a class="nav-link" href="mailto:lutr58@gmail.com"
-                >Mail
-                <div class="iconboxNav me-5">
-                  <i class="ri-mail-send-line"></i></div
-              ></a>
+              <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#contactModal">Contact
+                <div class="iconboxNav me-5"><i class="ri-mail-send-line"></i></div>
+              </a>
             </li>
             <!-- <li class="nav-item">
             <a class="nav-link" href="https://www.instagram.com/lt_swdev_?igsh=MTFwajE3Mmk3N2QzaQ==">Instagram <div class="iconboxNav me-5"><i class="ri-instagram-line"></i></div></a>
@@ -213,81 +212,95 @@
         </div>
       </div>
     </section>
-    <!-- INTERESTS SERVICE-->
-    <section class="section-padding" id="interest">
+    <!-- PROJECTS -->
+    <section class="section-padding" id="projects">
       <div class="container">
-        <div class="row">
-          <div
-            class="col-12 text-center"
-            data-aos="fade-down"
-            data-aos-delay="50"
-          >
+
+        <!-- Heading -->
+        <div class="row" data-aos="fade-down" data-aos-delay="50">
+          <div class="col-12 text-center">
             <div class="section-title">
-              <h1 class="display-3 fw-semibold">
-                I am interested in these areas
-              </h1>
+              <h1 class="display-3 fw-semibold">A view of my Projects</h1>
               <div class="line"></div>
               <p>
-                I am interested in different areas. My programming interests
-                include a variety of languages and technologies that I would
-                like to learn and gain experience. One of my aspirations is to
-                continue to grow and develop step by step.
+                Over the past months I have been building projects that combine
+                my passion for clean code and thoughtful design. Each project
+                reflects a different challenge I tackled — from web applications
+                to support tools. I am constantly learning, iterating and
+                pushing the work further. Below you can explore a selection of
+                what I have created so far.
               </p>
             </div>
           </div>
         </div>
-        <div class="row g-4 text-center">
-          
-          <div
-            class="col-lg-3 col-sm-6"
-            data-aos="fade-down"
-            data-aos-delay="50"
-          >
-            <div class="service theme-shadow p-lg-5 p-5">
-              <div class="iconbox"><i class="ri-voice-recognition-line"></i></div>
-              <h5 class="mt-4 mb-3">C++</h5>
-              <p>low-level & embedded sw development</p>
+
+        <!-- Carousel -->
+        <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-8 col-md-10 col-12 px-5 px-md-4">
+
+            <div id="projectsCarousel" class="carousel slide" data-bs-ride="false" data-bs-touch="true">
+
+              <div class="carousel-inner">
+
+                <!-- Slide 0: Cover -->
+                <div class="carousel-item active">
+                  <div class="project-cover">
+                    <div class="text-center">
+                      <p class="project-cover-label">Portfolio</p>
+                      <h2 class="project-cover-title">Projects</h2>
+                      <div class="project-cover-line"></div>
+                      <p class="project-cover-sub">Swipe or use arrows to explore</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Slide 1: TSH -->
+                <div class="carousel-item">
+                  <a href="https://kaaas58.github.io/techsupporthub/index.html" target="_blank" class="project-card-link">
+                    <div class="project-card">
+                      <img src="images/tsh.png" alt="TechSupport Hub" class="project-img" />
+                      <div class="project-card-body">
+                        <h5 class="project-card-title">TSH – TechSupport Hub</h5>
+                        <span class="project-card-badge">Visit project <i class="ri-arrow-right-up-line"></i></span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <!-- Slide 2: YouCanReach-it -->
+                <div class="carousel-item">
+                  <a href="https://kaaas58.github.io/youCanReach-it/index.html" target="_blank" class="project-card-link">
+                    <div class="project-card">
+                      <img src="images/ycri.png" alt="YouCanReach-it" class="project-img" />
+                      <div class="project-card-body">
+                        <h5 class="project-card-title">YouCanReach-it</h5>
+                        <span class="project-card-badge">Visit project <i class="ri-arrow-right-up-line"></i></span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+              </div>
+
+              <!-- Arrows -->
+              <button class="carousel-control-prev project-arrow" type="button" data-bs-target="#projectsCarousel" data-bs-slide="prev">
+                <i class="ri-arrow-left-s-line"></i>
+              </button>
+              <button class="carousel-control-next project-arrow" type="button" data-bs-target="#projectsCarousel" data-bs-slide="next">
+                <i class="ri-arrow-right-s-line"></i>
+              </button>
+
+              <!-- Pagination dots — innen, unten zentriert -->
+              <div class="project-dots">
+                <button type="button" data-bs-target="#projectsCarousel" data-bs-slide-to="0" class="project-dot active" aria-current="true" aria-label="Cover"></button>
+                <button type="button" data-bs-target="#projectsCarousel" data-bs-slide-to="1" class="project-dot" aria-label="TSH"></button>
+                <button type="button" data-bs-target="#projectsCarousel" data-bs-slide-to="2" class="project-dot" aria-label="YouCanReach-it"></button>
+              </div>
+
             </div>
           </div>
-          
-          <div
-            class="col-lg-3 col-sm-6"
-            data-aos="fade-down"
-            data-aos-delay="50"
-          >
-            <div class="service theme-shadow p-lg-5 p-5">
-              <div class="iconbox"><i class="ri-robot-2-line"></i></div>
-              <h5 class="mt-4 mb-3">Ros2</h5>
-              <p>Upcoming next, ROS2 learning & projects</p>
-            </div>
-          </div>
-          
-          <div
-            class="col-lg-3 col-sm-6"
-            data-aos="fade-down"
-            data-aos-delay="50"
-          >
-            <div class="service theme-shadow p-lg-5 p-5">
-              <div class="iconbox"><i class="ri-pages-line"></i></div>
-              <h5 class="mt-4 mb-3">web design</h5>
-              <p>different technologies, as down below</p>
-            </div>
-          </div>
-          
-          <div
-            class="col-lg-3 col-sm-6"
-            data-aos="fade-down"
-            data-aos-delay="50"
-          >
-            <div class="service theme-shadow p-lg-5 p-5">
-              <div class="iconbox"><i class="ri-stack-fill"></i></div>
-              <h5 class="mt-4 mb-3">App</h5>
-              <p>progressiv web / native / cross platform</p>
-            </div>
-          </div>
-          
-          
         </div>
+
       </div>
     </section>
     <!-- COUNTER  BANNER-->
@@ -384,94 +397,47 @@
           <a
             href="https://github.com/kaaas58/fia_abschluss"
             class="d-flex justify-content-center"
-            ><button class="btn btn-brand center-btn">Final Report</button></a
+            ><button class="btn btn-brand center-btn" style="margin-top: 12px;">Final Report</button></a
           >
         </div>
       </div>
     </section>
-    <section class="section-padding" id="">
-      <div class="container">
-        <div class="row">
-          <div
-            class="col-12 text-center"
-            data-aos="fade-down"
-            data-aos-delay="150"
-          >
-            <div class="section title">
-              <h1 class="display-4 fw-semibold">my grounding</h1>
-              <div class="line"></div>
-              <p>a few good words from which I was able to learn something</p>
+    <!-- CONTACT MODAL -->
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content contact-modal-content">
+          <div class="modal-header border-0 pb-0">
+            <div>
+              <h2 class="modal-title fw-semibold" id="contactModalLabel">Contact</h2>
+              <p class="contact-modal-sub">Feel free to reach out — I'll get back to you as soon as possible.</p>
             </div>
+            <button type="button" class="btn-close ms-auto" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
-          <div data-aos="fade-down" data-aos-delay="200">
-            <a
-              href="https://www.youtube.com/@zenmeisterhinnerkpolenski" target="_blank"
-              class="d-flex justify-content-center"
-              ><button class="btn btn-brand center-btn">
-                Zen-Meister Hinnerk Polenski
-              </button></a
-            >
+          <div class="modal-body pt-2">
+            <form action="https://formsubmit.co/info.ltcoding@gmx.de" method="POST" class="contact-form border-0 shadow-none p-0">
+              <input type="hidden" name="_captcha" value="false" />
+              <input type="hidden" name="_subject" value="New message from ltcoding.de" />
+              <div class="mb-3">
+                <input type="text" name="name" class="form-control contact-input" placeholder="Your name" required />
+              </div>
+              <div class="mb-3">
+                <input type="email" name="email" class="form-control contact-input" placeholder="Your email" required />
+              </div>
+              <div class="mb-4">
+                <textarea name="message" class="form-control contact-input" rows="5" placeholder="Your message" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-brand contact-submit w-100">Send message <i class="ri-send-plane-line"></i></button>
+            </form>
           </div>
-          <div data-aos="fade-down" data-aos-delay="200">
-            <a
-              href="https://www.youtube.com/@ShiHengYiOnline/featured" target="_blank"
-              class="d-flex justify-content-center"
-              ><button class="btn btn-brand center-btn">Shi Heng Yi</button></a
-            >
-          </div>
 
 
 
 
 
 
-          
-          <!--
-          <section class="section-padding" id="sats">
-           <div class="section title" style="text-align: center;" data-aos="fade-up" data-aos-delay="300">
-              <h1 class="display-4 fw-semibold">create your future</h1>
-              <div class="lineBlck" style="text-align: center;"></div>
-              <p>do your own research</p>
-            </div>
-
-          <div style="text-align: center; margin-top: 3rem ;">
-
-            <a href="https://www.bitpanda.com/?ref=575877680036968563" 
-            class="justify-content-center"
-            ><button class="btn btn-sat center-btn">Buy <span style="color: orange;">Bitcoin</span>, create Future!</button>
-            </a>
-
-            </div>
-            <div style="text-align: center; margin-top: 40px;" data-aos="fade-right" data-aos-delay="150">
-            
-           <a href="https://www.bitpanda.com/?ref=575877680036968563"
-              class="justify-content-center"
-            ><img src="images/onlyBtpnd.jpg" alt="image error" style="width:10rem; height:auto; border:2.5px solid black; border-radius:8px;"/>
-           </a>
-          </div>
-          <div style="text-align: center; margin-top: 65px;">
-            <a href="https://satsback.com/register/vRGoXWqGVQPM3kqE"
-            class="justify-content-center"
-            ><button class="btn btn-sat center-btn">Earn <span style="color: orange;">Bitcoin </span>- Cashback!</button>
-            </a>
-            </div>
-            <div style="text-align: center; margin-top: 40px;" data-aos="fade-left" data-aos-delay="150">
-            <a href="https://satsback.com/register/vRGoXWqGVQPM3kqE"
-              class="justify-content-center"
-            ><img src="images/onlySats.jpg" alt="image error" style="width:10rem; height:auto; border:2.5px solid black; border-radius:8px;"/>
-           </a>
-          </div>
-        </section>
-          
-        <div data-aos="fade-up" data-aos-delay="800"
-     data-aos-duration="900"
-     data-aos-easing="ease-in-out">
-          <img src="images/partner.jpg" style="margin-top: 0rem; margin-bottom: 0rem; padding-bottom: 0rem;" 8rem alt="">
-        </div>
-    -->
         </div>
       </div>
-    </section>
+    </div>
 
 
 
@@ -487,27 +453,21 @@
         <div class="container">
           <div class="row gy-9">
             <div class="col-lg-3 col-sm-6">
-              <!-- <div class="line"></div> -->
+              <a href="#">
+                <img
+                  src="images/logos/ltcodingw.svg"
+                  alt="LT Coding Logo"
+                  style="width: 210px; max-width: 100%; height: auto; display: block; margin-bottom: 16px;"
+                />
+              </a>
               <p>Please feel free to contact me</p>
-              <div>
-                <a
-                  href="https://www.instagram.com/lt_swdev_?igsh=MTFwajE3Mmk3N2QzaQ=="
-                  ><svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    width="32"
-                    height="32"
-                    fill="currentColor"
-                  >
-                    <path
-                      d="M12.001 9C10.3436 9 9.00098 10.3431 9.00098 12C9.00098 13.6573 10.3441 15 12.001 15C13.6583 15 15.001 13.6569 15.001 12C15.001 10.3427 13.6579 9 12.001 9ZM12.001 7C14.7614 7 17.001 9.2371 17.001 12C17.001 14.7605 14.7639 17 12.001 17C9.24051 17 7.00098 14.7629 7.00098 12C7.00098 9.23953 9.23808 7 12.001 7ZM18.501 6.74915C18.501 7.43926 17.9402 7.99917 17.251 7.99917C16.5609 7.99917 16.001 7.4384 16.001 6.74915C16.001 6.0599 16.5617 5.5 17.251 5.5C17.9393 5.49913 18.501 6.0599 18.501 6.74915ZM12.001 4C9.5265 4 9.12318 4.00655 7.97227 4.0578C7.18815 4.09461 6.66253 4.20007 6.17416 4.38967C5.74016 4.55799 5.42709 4.75898 5.09352 5.09255C4.75867 5.4274 4.55804 5.73963 4.3904 6.17383C4.20036 6.66332 4.09493 7.18811 4.05878 7.97115C4.00703 9.0752 4.00098 9.46105 4.00098 12C4.00098 14.4745 4.00753 14.8778 4.05877 16.0286C4.0956 16.8124 4.2012 17.3388 4.39034 17.826C4.5591 18.2606 4.7605 18.5744 5.09246 18.9064C5.42863 19.2421 5.74179 19.4434 6.17187 19.6094C6.66619 19.8005 7.19148 19.9061 7.97212 19.9422C9.07618 19.9939 9.46203 20 12.001 20C14.4755 20 14.8788 19.9934 16.0296 19.9422C16.8117 19.9055 17.3385 19.7996 17.827 19.6106C18.2604 19.4423 18.5752 19.2402 18.9074 18.9085C19.2436 18.5718 19.4445 18.2594 19.6107 17.8283C19.8013 17.3358 19.9071 16.8098 19.9432 16.0289C19.9949 14.9248 20.001 14.5389 20.001 12C20.001 9.52552 19.9944 9.12221 19.9432 7.97137C19.9064 7.18906 19.8005 6.66149 19.6113 6.17318C19.4434 5.74038 19.2417 5.42635 18.9084 5.09255C18.573 4.75715 18.2616 4.55693 17.8271 4.38942C17.338 4.19954 16.8124 4.09396 16.0298 4.05781C14.9258 4.00605 14.5399 4 12.001 4ZM12.001 2C14.7176 2 15.0568 2.01 16.1235 2.06C17.1876 2.10917 17.9135 2.2775 18.551 2.525C19.2101 2.77917 19.7668 3.1225 20.3226 3.67833C20.8776 4.23417 21.221 4.7925 21.476 5.45C21.7226 6.08667 21.891 6.81333 21.941 7.8775C21.9885 8.94417 22.001 9.28333 22.001 12C22.001 14.7167 21.991 15.0558 21.941 16.1225C21.8918 17.1867 21.7226 17.9125 21.476 18.55C21.2218 19.2092 20.8776 19.7658 20.3226 20.3217C19.7668 20.8767 19.2076 21.22 18.551 21.475C17.9135 21.7217 17.1876 21.89 16.1235 21.94C15.0568 21.9875 14.7176 22 12.001 22C9.28431 22 8.94514 21.99 7.87848 21.94C6.81431 21.8908 6.08931 21.7217 5.45098 21.475C4.79264 21.2208 4.23514 20.8767 3.67931 20.3217C3.12348 19.7658 2.78098 19.2067 2.52598 18.55C2.27848 17.9125 2.11098 17.1867 2.06098 16.1225C2.01348 15.0558 2.00098 14.7167 2.00098 12C2.00098 9.28333 2.01098 8.94417 2.06098 7.8775C2.11014 6.8125 2.27848 6.0875 2.52598 5.45C2.78014 4.79167 3.12348 4.23417 3.67931 3.67833C4.23514 3.1225 4.79348 2.78 5.45098 2.525C6.08848 2.2775 6.81348 2.11 7.87848 2.06C8.94514 2.0125 9.28431 2 12.001 2Z"
-                    ></path></svg></a
-                ><a class="p-2" href="#"
-                  ><img
-                    src="images/2LukasTrapp hardWhite.png"
-                    width="135px"
-                    alt=""
-                /></a>
+              <div class="mt-2">
+                <a href="https://www.instagram.com/lt_swdev_?igsh=MTFwajE3Mmk3N2QzaQ=="
+                   style="color: rgba(255,255,255,0.6);">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+                    <path d="M12.001 9C10.3436 9 9.00098 10.3431 9.00098 12C9.00098 13.6573 10.3441 15 12.001 15C13.6583 15 15.001 13.6569 15.001 12C15.001 10.3427 13.6579 9 12.001 9ZM12.001 7C14.7614 7 17.001 9.2371 17.001 12C17.001 14.7605 14.7639 17 12.001 17C9.24051 17 7.00098 14.7629 7.00098 12C7.00098 9.23953 9.23808 7 12.001 7ZM18.501 6.74915C18.501 7.43926 17.9402 7.99917 17.251 7.99917C16.5609 7.99917 16.001 7.4384 16.001 6.74915C16.001 6.0599 16.5617 5.5 17.251 5.5C17.9393 5.49913 18.501 6.0599 18.501 6.74915ZM12.001 4C9.5265 4 9.12318 4.00655 7.97227 4.0578C7.18815 4.09461 6.66253 4.20007 6.17416 4.38967C5.74016 4.55799 5.42709 4.75898 5.09352 5.09255C4.75867 5.4274 4.55804 5.73963 4.3904 6.17383C4.20036 6.66332 4.09493 7.18811 4.05878 7.97115C4.00703 9.0752 4.00098 9.46105 4.00098 12C4.00098 14.4745 4.00753 14.8778 4.05877 16.0286C4.0956 16.8124 4.2012 17.3388 4.39034 17.826C4.5591 18.2606 4.7605 18.5744 5.09246 18.9064C5.42863 19.2421 5.74179 19.4434 6.17187 19.6094C6.66619 19.8005 7.19148 19.9061 7.97212 19.9422C9.07618 19.9939 9.46203 20 12.001 20C14.4755 20 14.8788 19.9934 16.0296 19.9422C16.8117 19.9055 17.3385 19.7996 17.827 19.6106C18.2604 19.4423 18.5752 19.2402 18.9074 18.9085C19.2436 18.5718 19.4445 18.2594 19.6107 17.8283C19.8013 17.3358 19.9071 16.8098 19.9432 16.0289C19.9949 14.9248 20.001 14.5389 20.001 12C20.001 9.52552 19.9944 9.12221 19.9432 7.97137C19.9064 7.18906 19.8005 6.66149 19.6113 6.17318C19.4434 5.74038 19.2417 5.42635 18.9084 5.09255C18.573 4.75715 18.2616 4.55693 17.8271 4.38942C17.338 4.19954 16.8124 4.09396 16.0298 4.05781C14.9258 4.00605 14.5399 4 12.001 4ZM12.001 2C14.7176 2 15.0568 2.01 16.1235 2.06C17.1876 2.10917 17.9135 2.2775 18.551 2.525C19.2101 2.77917 19.7668 3.1225 20.3226 3.67833C20.8776 4.23417 21.221 4.7925 21.476 5.45C21.7226 6.08667 21.891 6.81333 21.941 7.8775C21.9885 8.94417 22.001 9.28333 22.001 12C22.001 14.7167 21.991 15.0558 21.941 16.1225C21.8918 17.1867 21.7226 17.9125 21.476 18.55C21.2218 19.2092 20.8776 19.7658 20.3226 20.3217C19.7668 20.8767 19.2076 21.22 18.551 21.475C17.9135 21.7217 17.1876 21.89 16.1235 21.94C15.0568 21.9875 14.7176 22 12.001 22C9.28431 22 8.94514 21.99 7.87848 21.94C6.81431 21.8908 6.08931 21.7217 5.45098 21.475C4.79264 21.2208 4.23514 20.8767 3.67931 20.3217C3.12348 19.7658 2.78098 19.2067 2.52598 18.55C2.27848 17.9125 2.11098 17.1867 2.06098 16.1225C2.01348 15.0558 2.00098 14.7167 2.00098 12C2.00098 9.28333 2.01098 8.94417 2.06098 7.8775C2.11014 6.8125 2.27848 6.0875 2.52598 5.45C2.78014 4.79167 3.12348 4.23417 3.67931 3.67833C4.23514 3.1225 4.79348 2.78 5.45098 2.525C6.08848 2.2775 6.81348 2.11 7.87848 2.06C8.94514 2.0125 9.28431 2 12.001 2Z"/>
+                  </svg>
+                </a>
               </div>
             </div>
             <div class="col-lg-3 col-sm-6">
@@ -532,7 +492,7 @@
                 </li>
                 <li>
                   <i class="ri-mail-line"></i
-                  ><a href="mailto:lutr58@gmail.com">Mail</a>
+                  ><a href="#" data-bs-toggle="modal" data-bs-target="#contactModal">Contact</a>
                 </li>
                 <li>
                   <i class="impressum"></i
@@ -547,7 +507,7 @@
               <ul>
                 <li>55118 Mainz</li>
                 <li>(+49)17662002093</li>
-                <li>lutr58@gmail.com</li>
+                <li><a href="#" data-bs-toggle="modal" data-bs-target="#contactModal" style="color:rgba(255,255,255,0.6);">info.ltcoding@gmx.de</a></li>
                 <li>https://kaaas58.github.io/ltcoding/</li>
               </ul>
             </div>
