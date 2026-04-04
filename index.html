@@ -73,21 +73,18 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon" style="font-size: 1.1rem"></span>
+          <span class="burger">
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+          </span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
-            <!-- nav-link von home war frÃ¼her #home, Platz der id an falscher Stelle gesetzt, mit # ist der Home button in der navbar jetz erstmal funktionabel -->
-            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About me</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#projects">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#portfolio">SetUp|Office|Repo</a>
-            </li>
+            <li class="nav-item"><a class="nav-link" href="#home" data-section="home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about" data-section="about">About me</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects" data-section="projects">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="#portfolio" data-section="portfolio">SetUp|Office|Repo</a></li>
           
             
             
@@ -100,8 +97,8 @@
 
             
             <li class="nav-item">
-              <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#contactModal">Contact
-                <div class="iconboxNav me-5"><i class="ri-mail-send-line"></i></div>
+              <a class="nav-link d-flex align-items-center justify-content-center gap-1" href="#" data-bs-toggle="modal" data-bs-target="#contactModal">Contact
+                <div class="iconboxNav"><i class="ri-mail-send-line"></i></div>
               </a>
             </li>
             <!-- <li class="nav-item">
@@ -262,7 +259,7 @@
                       <img src="images/tsh.png" alt="TechSupport Hub" class="project-img" />
                       <div class="project-card-body">
                         <h5 class="project-card-title">TSH – TechSupport Hub</h5>
-                        <span class="project-card-badge">Visit project <i class="ri-arrow-right-up-line"></i></span>
+                        <span class="project-card-badge">Visit side <i class="ri-arrow-right-up-line"></i></span>
                       </div>
                     </div>
                   </a>
@@ -275,7 +272,7 @@
                       <img src="images/ycri.png" alt="YouCanReach-it" class="project-img" />
                       <div class="project-card-body">
                         <h5 class="project-card-title">YouCanReach-it</h5>
-                        <span class="project-card-badge">Visit project <i class="ri-arrow-right-up-line"></i></span>
+                        <span class="project-card-badge">Visit side <i class="ri-arrow-right-up-line"></i></span>
                       </div>
                     </div>
                   </a>

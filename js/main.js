@@ -28,6 +28,30 @@ AOS.init({
   }, { passive: true });
 })();
 
+// Active nav link via IntersectionObserver
+(function () {
+  const links = document.querySelectorAll('.nav-link[data-section]');
+  const sections = [];
+  links.forEach(l => {
+    const el = document.getElementById(l.dataset.section);
+    if (el) sections.push(el);
+  });
+
+  function setActive(id) {
+    links.forEach(l => {
+      l.classList.toggle('nav-active', l.dataset.section === id);
+    });
+  }
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) setActive(entry.target.id);
+    });
+  }, { threshold: 0.25 });
+
+  sections.forEach(s => observer.observe(s));
+})();
+
 // Projects carousel — mouse drag to slide
 document.addEventListener('DOMContentLoaded', function () {
   const inner = document.querySelector('#projectsCarousel .carousel-inner');
