@@ -448,6 +448,9 @@ p {
   opacity: 1;
   bottom: 24px;
 }
+#portfolio {
+  padding-bottom: 160px;
+}
 #contact {
   position: relative;
   z-index: 2;
