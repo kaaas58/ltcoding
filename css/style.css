@@ -5,8 +5,15 @@
   .navbar-nav .nav-item {
     margin-bottom: 10px;
   }
-  .navbar-toggler {
-    margin-top: 10px;
+  .navbar > .container-fluid {
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+  .navbar-brand img {
+    width: 150px;
+  }
+  .d-xxl-none.ms-auto {
+    flex-shrink: 0;
   }
   .display-1 {
     font-size: 2rem;
