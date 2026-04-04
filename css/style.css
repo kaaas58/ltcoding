@@ -757,8 +757,8 @@ footer .line {
   z-index: 10;
 }
 .project-dot {
-  width: 9px;
-  height: 9px;
+  width: 8px;
+  height: 8px;
   border-radius: 50%;
   background-color: rgba(68, 80, 244, 0.25);
   border: 1.5px solid rgba(68, 80, 244, 0.40);
