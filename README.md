@@ -4,7 +4,7 @@ Persönliche Portfolio-Website von Lukas Trapp (Junior Software Developer). Prä
 
 ## Screenshot
 
-![Hero Section – LT Coding](thumbnails/head.png)
+![Hero Section](thumbnails/head.png) ![About Me](thumbnails/me.png) ![Projekt-Karussell](thumbnails/Karussell.png)
 
 ## Features
 
