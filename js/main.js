@@ -99,6 +99,24 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
+// Logo: scroll to footer, or back to top if already at footer
+document.addEventListener('DOMContentLoaded', function () {
+  const logoLink = document.getElementById('logoLink');
+  const footer = document.getElementById('site-footer');
+  if (!logoLink || !footer) return;
+
+  logoLink.addEventListener('click', function (e) {
+    e.preventDefault();
+    const footerTop = footer.getBoundingClientRect().top + window.scrollY;
+    const atFooter = window.scrollY + window.innerHeight >= footerTop - 100;
+    if (atFooter) {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else {
+      footer.scrollIntoView({ behavior: 'smooth' });
+    }
+  });
+});
+
 // Carousel links — theme parameter
 document.addEventListener('DOMContentLoaded', function () {
   document.querySelectorAll('.project-card-link').forEach(function (link) {
