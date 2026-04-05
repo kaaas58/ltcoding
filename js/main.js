@@ -99,6 +99,18 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
+// Carousel links — theme parameter
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelectorAll('.project-card-link').forEach(function (link) {
+    link.addEventListener('click', function (e) {
+      const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+      const url = new URL(link.href);
+      url.searchParams.set('theme', isDark ? 'dark' : 'light');
+      link.href = url.toString();
+    });
+  });
+});
+
 // Dark mode toggle
 (function () {
   const html = document.documentElement;
