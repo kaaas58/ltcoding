@@ -4,7 +4,11 @@ Persönliche Portfolio-Website von Lukas Trapp (Junior Software Developer). Prä
 
 ## Screenshot
 
-![Hero Section](thumbnails/head.png) ![About Me](thumbnails/me.png) ![Projekt-Karussell](thumbnails/Karussell.png)
+<div align="center">
+  <img src="thumbnails/head.png" alt="Hero Section" style="border: 6px solid #ffffff; border-radius: 6px; margin: 8px 0; display: block;" width="480"><br>
+  <img src="thumbnails/me.png" alt="About Me" style="border: 6px solid #ffffff; border-radius: 6px; margin: 8px 0; display: block;" width="480"><br>
+  <img src="thumbnails/Karussell.png" alt="Projekt-Karussell" style="border: 6px solid #ffffff; border-radius: 6px; margin: 8px 0; display: block;" width="480">
+</div>
 
 ## Features
 
