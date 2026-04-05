@@ -1,109 +1,22 @@
-# ltcoding – Persönliche Portfolio‑Website
+# LT Coding – Personal Portfolio Website
 
-> Persönliche Website zur Darstellung meines Lernwegs als Junior Softwareentwickler
+Persönliche Portfolio-Website von Lukas Trapp (Junior Software Developer). Präsentiert Projekte, Lernweg und Arbeitsumfeld – mit Dark/Light Mode, responsiver Navigation und Projekt-Karussell.
 
-## 🧭 Überblick
+## Screenshot
 
-Diese Website dient als **persönliches Portfolio- und Lernprojekt**. Sie zeigt meinen aktuellen Stand in der Software‑ und Webentwicklung, meine Interessen, Lernschwerpunkte sowie ausgewählte Inhalte aus meinen Repositories.
+![Hero Section – LT Coding](thumbnails/head.png)
 
-Die Seite wurde bewusst **klar, ruhig und strukturiert** gehalten, um sowohl den Inhalt als auch meinen Lernfortschritt in den Vordergrund zu stellen.
+## Features
 
-🔗 **Live‑Demo:** [https://kaaas58.github.io/ltcoding/](https://kaaas58.github.io/ltcoding/)
+- **Dark / Light Mode** – Toggle mit localStorage-Persistenz; Theme wird auch an verlinkte Projekte übergeben
+- **Smart Navbar** – Versteckt sich beim Scrollen nach unten, erscheint beim Scrollen nach oben
+- **Responsive Burger Menu** – Kompaktes Mobilmenü mit eigenem Darkmode-Toggle
+- **Projekt-Karussell** – Swipe (Touch) und Drag (Maus) zum Durchblättern der Projekte
+- **Active-Section-Highlighting** – Aktiver Nav-Link wird per IntersectionObserver erkannt
+- **Kontaktformular** – Modal-Dialog mit FormSubmit-Integration
+- **Bildergalerie** – Fancybox-Lightbox für Office/Setup-Fotos
+- **Logo-Klick-Shortcut** – Klick aufs Logo scrollt zum Footer; erneuter Klick zurück nach oben
 
----
-## 🎯 Ziel des Projekts
+## Demo
 
-* Aufbau einer eigenen Portfolio‑Website
-* Praktische Anwendung von HTML, CSS und grundlegenden Web‑Konzepten
-* Dokumentation meines Lern‑ und Entwicklungsprozesses
-* Zentrale Anlaufstelle für meine GitHub‑Projekte
-
----
-## 🛠️ Verwendete Technologien
-
-* **HTML5** - Seitenstruktur
-* **CSS3** - Layout & Styling
-* **Responsive Design** - Darstellung auf verschiedenen Geräten
-* **GitHub Pages** - Deployment
-* **Bibliotheken - Icons
-
----
-## 📂 Inhalte der Website
-
-* **Hero / Startbereich** – Kurze Einführung
-* **About Me** – Persönlicher Hintergrund und Motivation
-* **Interessen & Credo** – Technologien und Themenbereiche
-* **Learning at the moment** – Aktuelle Lernschwerpunkte
-* **Setup / Office** – Einblicke in mein Arbeitsumfeld
-* **Repository‑Verlinkung** – Weiterleitung zu meinen GitHub‑Repos
-
----
-## 🚀 Motivation
-
-Diese Website ist Teil meiner kontinuierlichen Weiterentwicklung als **Softwareentwickler**. Der Fokus liegt nicht auf **konstantem Lernen, Anwenden und Verbessern**.
-
----
-## 📸 Screenshots
-<!-- <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;"> -->
-
-<div style="display: flex; gap: 16px; flex-wrap: wrap;">
-
-  <a href="screenshots/head.png" target="_blank">
-    <img src="thumbnails/head.png" alt="Hero Section" width="220">
-  </a>
-
-  <a href="screenshots/me.png" target="_blank">
-    <img src="thumbnails/me.png" alt="About Me Section" width="220">
-  </a>
-
-  <a href="screenshots/tech.png" target="_blank">
-    <img src="thumbnails/tech.png" alt="Tech & Interests Section" width="220">
-  </a>
-
-</div>
-
----
-## Struktur
-```plaitext
-├── css/              # Stylesheets
-├── fonts/            # Schriftarten
-├── images/           # Allgemeine Bilder
-├── js/               # JavaScript-Dateien
-├── screenshots/      # Vollauflösende Screenshots der Website
-│  ├── head.png
-│  ├── me.png
-│  └── tech.png
-│
-├── thumbnails/       # Kleine Vorschau-Bilder für README
-│  ├── head.png
-│  ├── me.png
-│  └── tech.png
-│
-├── index.html        # Hauptseite
-├── impressum.html    # Impressum
-└── README.md         # Projektbeschreibung
-```
----
-## 🔮 Ausblick
-
-Geplant sind u. a.:
-
-* Erweiterung des Repos um neue Projekte
-* Verbesserungen im Design und in der Struktur bei Bedarf
-* Ergänzung um JavaScript‑Funktionalität bei Bedarf
-
----
-## 👤 Autor
-
-**Lukas Trapp**
-Junior Software Developer
-
-<a href="https://kaaas58.github.io/ltcoding/" target="_blank">
-  Zur Website
-  
-</a>
-GitHub: [https://github.com/kaaas58](https://github.com/kaaas58)
-
----
-
-> 💡 Hinweis: Dieses Projekt ist ein Lern‑ und Entwicklungsprojekt.
+[https://kaaas58.github.io/ltcoding/](https://kaaas58.github.io/ltcoding/)
