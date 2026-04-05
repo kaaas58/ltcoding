@@ -1,3 +1,9 @@
+@media (max-width: 380px) {
+  .navbar-brand img {
+    max-width: 190px;
+  }
+}
+
 @media (max-width: 459px) {
   .navbar-nav {
     flex-direction: column;
