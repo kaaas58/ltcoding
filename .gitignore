@@ -1,0 +1,20 @@
+# VS Code lokale Einstellungen
+.vscode/
+
+# Claude lokale Einstellungen
+.claude/
+
+# Betriebssystem-Dateien
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Build-Ordner (falls vorhanden)
+dist/
+build/
+
+# Node.js (falls später genutzt)
+node_modules/
+.env

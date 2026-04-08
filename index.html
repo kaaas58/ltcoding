@@ -216,103 +216,7 @@
         <!-- Carousel -->
         <div class="row justify-content-center">
           <div class="col-lg-8 col-md-10 col-12 px-5 px-md-4">
-
-            <div id="projectsCarousel" class="carousel slide" data-bs-ride="false" data-bs-touch="true">
-
-              <div class="carousel-inner">
-
-                <!-- Slide 0: Cover -->
-                <div class="carousel-item active">
-                  <div class="project-cover">
-                    <div class="project-cover-inner text-center">
-                      <p class="project-cover-label">Portfolio</p>
-                      <h2 class="project-cover-title">Projects</h2>
-                      <div class="project-cover-line"></div>
-                      <p class="project-cover-sub">Swipe or use arrows to explore</p>
-                    </div>
-                    <div class="project-card-body">
-                      <h5 class="project-card-title">My Projects</h5>
-                      <span class="project-card-badge">&nbsp;</span>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Slide 1: TSH -->
-                <div class="carousel-item">
-                  <a href="https://kaaas58.github.io/techsupporthub/index.html" target="_self" class="project-card-link">
-                    <div class="project-card">
-                      <img src="images/tsh.png" alt="TechSupport Hub" class="project-img img-dark" />
-                      <img src="images/tshl.png" alt="TechSupport Hub" class="project-img img-light" />
-                      <div class="project-card-body">
-                        <h5 class="project-card-title">TechSupport Hub</h5>
-                        <span class="project-card-badge">Visit side <i class="ri-arrow-right-up-line"></i></span>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-
-                <!-- Slide 2: InnerWork -->
-                <div class="carousel-item">
-                  <a href="https://kaaas58.github.io/innerwork/" target="_self" class="project-card-link">
-                    <div class="project-card">
-                      <img src="images/innerwork.png" alt="InnerWork" class="project-img img-dark" />
-                      <img src="images/innerworkl.png" alt="InnerWork" class="project-img img-light" />
-                      <div class="project-card-body">
-                        <h5 class="project-card-title">InnerWork</h5>
-                        <span class="project-card-badge">Visit side <i class="ri-arrow-right-up-line"></i></span>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-
-                <!-- Slide 3: YouCanReach-it -->
-                <div class="carousel-item">
-                  <a href="https://kaaas58.github.io/youCanReach-it/index.html" target="_self" class="project-card-link">
-                    <div class="project-card">
-                      <img src="images/ycri.png" alt="YouCanReach-it" class="project-img img-dark" />
-                      <img src="images/ycril.png" alt="YouCanReach-it" class="project-img img-light" />
-                      <div class="project-card-body">
-                        <h5 class="project-card-title">YouCanReach-it</h5>
-                        <span class="project-card-badge">Visit side <i class="ri-arrow-right-up-line"></i></span>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-
-                <!-- Slide 4: CoachJohan -->
-                <div class="carousel-item">
-                  <a href="https://kaaas58.github.io/coachjohan/" target="_self" class="project-card-link">
-                    <div class="project-card">
-                      <img src="images/cj.png" alt="CoachJohan" class="project-img img-dark" />
-                      <img src="images/cj.png" alt="CoachJohan" class="project-img img-light" />
-                      <div class="project-card-body">
-                        <h5 class="project-card-title">CoachJohan</h5>
-                        <span class="project-card-badge">Visit side <i class="ri-arrow-right-up-line"></i></span>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-
-              </div>
-
-              <!-- Arrows -->
-              <button class="carousel-control-prev project-arrow" type="button" data-bs-target="#projectsCarousel" data-bs-slide="prev">
-                <i class="ri-arrow-left-s-line"></i>
-              </button>
-              <button class="carousel-control-next project-arrow" type="button" data-bs-target="#projectsCarousel" data-bs-slide="next">
-                <i class="ri-arrow-right-s-line"></i>
-              </button>
-
-              <!-- Pagination dots — innen, unten zentriert -->
-              <div class="project-dots">
-                <button type="button" data-bs-target="#projectsCarousel" data-bs-slide-to="0" class="project-dot active" aria-current="true" aria-label="Cover"></button>
-                <button type="button" data-bs-target="#projectsCarousel" data-bs-slide-to="1" class="project-dot" aria-label="TSH"></button>
-                <button type="button" data-bs-target="#projectsCarousel" data-bs-slide-to="2" class="project-dot" aria-label="YouCanReach-it"></button>
-                <button type="button" data-bs-target="#projectsCarousel" data-bs-slide-to="3" class="project-dot" aria-label="InnerWork"></button>
-                <button type="button" data-bs-target="#projectsCarousel" data-bs-slide-to="4" class="project-dot" aria-label="CoachJohan"></button>
-              </div>
-
-            </div>
+            <div data-component="projects-carousel" data-base="./"></div>
           </div>
         </div>
 
@@ -529,6 +433,7 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="js/projects-carousel.js"></script>
     <script src="js/main.js"></script>
     <script>
   document.addEventListener("DOMContentLoaded", function () {
