@@ -1,8 +1,0 @@
-{
-  "permissions": {
-    "allow": [
-      "Bash(cmd /c \"powershell -NoProfile -ExecutionPolicy Bypass -File -\")",
-      "Bash(cmd /c findstr /n \"Send message\" \"c:\\\\Users\\\\lutr5\\\\DEV\\\\DEV_websides\\\\ltcoding\\\\index.html\")"
-    ]
-  }
-}
